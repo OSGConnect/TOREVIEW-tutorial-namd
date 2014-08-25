@@ -12,7 +12,7 @@ Table of Contents
 NAMD is a molecular dynamics program. In this tutorial, we will learn how to run NAMD simulations in open science grid (OSG).  As an example, we will perform the molecular dynamics simulation of Ubiquitin (pdb ID: UBQ) in implicit water. 
 
 
-2. Set up 
+2.Set up 
 
 In the command prompt, type
 
@@ -66,7 +66,7 @@ To sum it up, the simulation of new system requires updating line 3 in “namd_r
 
 To run the simulation, type
 
-$ Condor_submit 
+$ condor_submit 
 
 The present job should be finished quickly (less than an hour). Once the simulation is finished successfully, you will see the output file,  trajectory files and restart files that were generated from the NAMD simulation. 
 
