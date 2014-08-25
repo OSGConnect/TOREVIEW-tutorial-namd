@@ -70,3 +70,4 @@ $ Condor_submit
 
 The present job should be finished quickly (less than an hour). Once the simulation is finished successfully, you will see the output file,  trajectory files and restart files that were generated from the NAMD simulation. 
 
+
