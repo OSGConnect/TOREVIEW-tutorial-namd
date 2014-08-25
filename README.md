@@ -29,7 +29,7 @@ par_all27_prot_lipid.inp (parameter file for NAMD)
 
 The  namd_run.submit and namd_run.sh are the script files related  to job submission and the other files are required by the namd software. Details about the namd input files and how to prepare them can be found in namd website. 
 
-3.  Job execution and submission scripts
+3. Job execution and submission scripts
 
 Script file  “namd_run.submit” is the condor script file that has the basic information about submitting an HTC job.  Please refer connect book to learn about the key words in the script. Here, we will discuss the usage of  “transfer_input_files” relevant to NAMD simulations.  The key word “transfer_input_files” transfers the listed files into the worker machine.  In our example,  
 
@@ -50,6 +50,7 @@ line 2:  Sets up the environment  (such as path of the binary,  libraries ..etc)
 Line 3:  Execution of  namd  simulation for the input file “ubq_gbis_eq.conf” and redirects the out put file to “ubq_gbis_eq.log”. 
 
 To sum it up, the simulation of new system requires updating line 3 in “namd_run.sh” and the list of file names for the keyword transfer_input_files  in “namd_run.submit”.
+
 
 4. Running the simulation
 
