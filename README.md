@@ -44,7 +44,9 @@ module load namd/2.9
 namd2 ubq_gbis_eq.conf  > ubq_gbis_eq.log
 
 line 1:  Reads and executes the bash file located in the init directory
+
 line 2:  Sets up the environment  (such as path of the binary,  libraries ..etc) to run NAMD. 
+
 Line 3:  Execution of  namd  simulation for the input file “ubq_gbis_eq.conf” and redirects the out put file to “ubq_gbis_eq.log”. 
 
 To sum it up, the simulation of new system requires updating line 3 in “namd_run.sh” and the list of file names for the keyword transfer_input_files  in “namd_run.submit”.
