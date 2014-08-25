@@ -1,0 +1,12 @@
+Universe = vanilla
+Executable = namd_run.sh
+transfer_input_files = ubq_gbis_eq.conf, ubq.pdb, ubq.psf, par_all27_prot_lipid.inp
+Error = job.error
+Output = job.output
+Log = job.log
+should_transfer_files=YES
+when_to_transfer_output = ON_EXIT
+requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
++ProjectName="ConnectTrain"
+Queue 
+
