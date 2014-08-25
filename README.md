@@ -18,7 +18,8 @@ In the command prompt, type
 
 $tutorial namd
 
-This will create a directory “OSG_tutorial-namd”. Within this directory you will see the following files.
+This will create a directory “OSG_tutorial-namd”. Within this directory you will see the following files
+
 
 namd_run.submit  (the condor job submission script)
 
@@ -33,9 +34,12 @@ ubq.psf (Protein structure information, NAMD needs this file)
 par_all27_prot_lipid.inp (parameter file for NAMD)
 
 
+
+
 The  namd_run.submit and namd_run.sh are the script files related  to job submission and the other files are required by the namd software. Details about the namd input files and how to prepare them can be found in namd website. 
 
 3. Job execution and submission scripts
+
 
 Script file  “namd_run.submit” is the condor script file that has the basic information about submitting an HTC job.  Please refer connect book to learn about the key words in the script. Here, we will discuss the usage of  “transfer_input_files” relevant to NAMD simulations.  The key word “transfer_input_files” transfers the listed files into the worker machine.  In our example,  
 
