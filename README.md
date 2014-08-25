@@ -9,10 +9,12 @@ Table of Contents
 
 1. Overview
 
+
 NAMD is a molecular dynamics program. In this tutorial, we will learn how to run NAMD simulations in open science grid (OSG).  As an example, we will perform the molecular dynamics simulation of Ubiquitin (pdb ID: UBQ) in implicit water. 
 
 
 2.Set up 
+
 
 In the command prompt, type
 
@@ -38,7 +40,7 @@ par_all27_prot_lipid.inp (parameter file for NAMD)
 
 The  namd_run.submit and namd_run.sh are the script files related  to job submission and the other files are required by the namd software. Details about the namd input files and how to prepare them can be found in namd website. 
 
-3. Job execution and submission scripts
+3.Job execution and submission scripts
 
 
 Script file  “namd_run.submit” is the condor script file that has the basic information about submitting an HTC job.  Please refer connect book to learn about the key words in the script. Here, we will discuss the usage of  “transfer_input_files” relevant to NAMD simulations.  The key word “transfer_input_files” transfers the listed files into the worker machine.  In our example,  
@@ -62,11 +64,11 @@ Line 3:  Execution of  namd  simulation for the input file “ubq_gbis_eq.conf�
 To sum it up, the simulation of new system requires updating line 3 in “namd_run.sh” and the list of file names for the keyword transfer_input_files  in “namd_run.submit”.
 
 
-4. Running the simulation
+4.Running the simulation
 
 To run the simulation, type
 
-$ condor_submit 
+$condor_submit 
 
 The present job should be finished quickly (less than an hour). Once the simulation is finished successfully, you will see the output file,  trajectory files and restart files that were generated from the NAMD simulation. 
 
