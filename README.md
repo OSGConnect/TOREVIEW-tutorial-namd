@@ -21,11 +21,17 @@ $tutorial namd
 This will create a directory “OSG_tutorial-namd”. Within this directory you will see the following files.
 
 namd_run.submit  (the condor job submission script)
+
 namd_run.sh  (shell script to run the namd simulation)
+
 ubq_gbis_eq.conf (input file for NAMD)
+
 ubq.pdb (Protein pdb file, NAMD needs this file)
+
 ubq.psf (Protein structure information, NAMD needs this file)
+
 par_all27_prot_lipid.inp (parameter file for NAMD)
+
 
 The  namd_run.submit and namd_run.sh are the script files related  to job submission and the other files are required by the namd software. Details about the namd input files and how to prepare them can be found in namd website. 
 
