@@ -7,7 +7,7 @@ Table of Contents
 
 ------------------------------------------------------------------------
 
-1. Overview
+1.Overview
 
 
 NAMD is a molecular dynamics program. In this tutorial, we will learn how to run NAMD simulations in open science grid (OSG).  As an example, we will perform the molecular dynamics simulation of Ubiquitin (pdb ID: 1UBQ) in implicit water. 
