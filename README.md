@@ -43,7 +43,7 @@ The  namd_run.submit and namd_run.sh are the script files related  to job submis
 3.Job execution and submission scripts
 
 
-Script file  “namd_run.submit” is the condor script file to submitt an HTC job.  Please refer connect book to learn about the key words in the script. Here, we will discuss the usage of  “transfer_input_files” relevant to NAMD simulations.  The key word “transfer_input_files” transfers the listed files into the worker machine.  In our example,  
+Script file  “namd_run.submit” is the condor script file to submit an HTC job.  Please refer connect book to learn about the key words in the script. Here, we will discuss the usage of  “transfer_input_files” relevant to NAMD simulations.  The key word “transfer_input_files” transfers the listed files into the worker machine.  In our example,  
 
 transfer_input_files = ubq_gbis_eq.conf, ubq.pdb, ubq.psf, par_all27_prot_lipid.inp
 
