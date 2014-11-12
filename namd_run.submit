@@ -1,14 +1,9 @@
-Universe = grid
-grid_resource = batch condor dbala@login.ci-connect.uchicago.edu
+Universe = vanilla
 Executable = namd_run.sh
+arguments = $(Process)
 transfer_input_files = ubq_gbis_eq.conf, ubq.pdb, ubq.psf, par_all27_prot_lipid.inp
-transfer_output_files = OutFilesFromNAMD.tar.gz
-should_transfer_files=Yes
-when_to_transfer_output = ON_EXIT
-output        = job.out
-error         = job.error
-log           = job.log
-requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
-+ProjectName="uchicago"
-Queue 
+output        = job.out.$(Process)
+error         = job.error.$(Process)
+log           = job.log.$(Process)
+Queue 1
 
