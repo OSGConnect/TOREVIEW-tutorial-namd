@@ -5,3 +5,5 @@ namd2 ubq_gbis_eq.conf > output.$1.dat
 
 
 
+
+
