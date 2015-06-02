@@ -1,3 +1,13 @@
+Table of Contents
+=================
+
+  * [NAMD example](#namd-example)
+    * [Overview](#overview)
+    * [NAMD tutorial files](#namd-tutorial-files)
+    * [Job execution and submission files](#job-execution-and-submission-files)
+    * [Running the simulation](#running-the-simulation)
+    * [References](#references)
+    * [Help](#help)
 
 #NAMD example
 
