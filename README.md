@@ -70,9 +70,9 @@ $ condor_q username  # The status of the job is printed on the screen. Here, use
 After the simulation is completed, you will see the output files (including restart and trajectory files) from NAMD in your work directory.
 
 ##References
-**NAMD tutorial** Tutorials are available to learn the basics of molecular dynamics simulations of biomolecules and chemicals with NAMD package. 
-**OSG  QuickStart**  Getting started with the Open Science Grid (OSG).
-**Condor Manual**   Manual for the high throughput condor (HTCondor)  software to schedules the jobs on OSG. 
+Item 1 **NAMD tutorial** Tutorials are available to learn the basics of molecular dynamics simulations of biomolecules and chemicals with NAMD package. 
+Item 2 **OSG  QuickStart**  Getting started with the Open Science Grid (OSG).
+Item 3 **Condor Manual**   Manual for the high throughput condor (HTCondor)  software to schedules the jobs on OSG. 
 ##Help
 For further assistance or questions, please email ***connect-support@opensciencegrid.org***
 
