@@ -9,6 +9,8 @@ Table of Contents
     * [References](#references)
     * [Help](#help)
 
+[TOC]
+`[TOC]`
 #NAMD example
 
 ##Overview
