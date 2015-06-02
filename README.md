@@ -73,7 +73,7 @@ After the simulation is completed, you will see the output files (including rest
 1. **NAMD tutorial** Tutorials are available to learn the basics of molecular dynamics simulations of biomolecules and chemicals with NAMD package. 
 - **OSG  QuickStart**  Getting started with the Open Science Grid (OSG).
 - **Condor Manual**   Manual for the high throughput condor (HTCondor)  software to schedules the jobs on OSG.
-- 
+
 ##Help
 For further assistance or questions, please email ***connect-support@opensciencegrid.org***
 
