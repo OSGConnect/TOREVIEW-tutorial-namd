@@ -63,8 +63,10 @@ In essence, the NAMD simulation of a new molecule requires updating line 3 in `n
 
 We submit the job using `condor_submit` command as follows
 
+```
 $ condor_submit namd_run.submit //Submit the condor job script "namd_run.submit"
- 
+```
+
 Now you have submitted the NAMD simulation of ubiquitin in implicit solvent on the OSG.  The present job should be finished quickly (less than an hour). You can check the status of the submitted job by using the `condor_q` command as follows
 
 ```
