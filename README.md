@@ -1,4 +1,4 @@
-# Running NAMD on OSG
+[title]: - "NAMD"
 
  * [Overview](#overview)
  * [NAMD tutorial files](#namd-tutorial-files)
