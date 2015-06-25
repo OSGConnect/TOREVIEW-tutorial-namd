@@ -14,6 +14,7 @@ It is easiest to start with the `tutorial` command. In the command prompt, type
 	 $ tutorial namd # Copies input and script files to the directory tutorial-namd.
  
 This will create a directory `tutorial-namd`. Inside the directory, you will see the following files
+
 	namd_run.submit            # Condor job submission script file.
 	namd_run.sh                # Job execution script file.
 	ubq_gbis_eq.conf           # Input configuration for NAMD.
@@ -26,15 +27,18 @@ Here, `namd_run.submit` and `namd_run.sh` are the script files related to job su
 
 ## Job execution and submission files
 
-The file `namd_run.submit` is the HTCondor job submission file.  Here, we focus on the HTCondor file transfer mechanism relevant for this NAMD simulation example. The key word `transfer_input_files`  specifies what input files  are transferred from the login machine to the remote worker machine (where the jobs are being executed).  In the `namd_run.submit` file, the keyword 
+The file `namd_run.submit` is the HTCondor job submission file.  Here, we focus on the HTCondor file transfer mechanism relevant for this NAMD simulation example. The key word `transfer_input_files`  specifies what input files  are transferred from the login machine to the remote worker machine (where the jobs are being executed).  In the `namd_run.submit` file, the option
+
 	transfer_input_files = ubq_gbis_eq.conf, ubq.pdb, ubq.psf, par_all27_prot_lipid.inp # list of input files needs to be transferred to the worker machine before. 
-means that the listed files are transferred from the login.osgconnect.net to the worker machine.
+	
+means that the listed files are transferred from the `login.osgconnect.net` to the worker machine.
  
-Similarly, we can transfer the output files from the worker machine to login.osgconnect.net by adding the following lines in the HTCondor job submission script file `namd_run.submit`:
+Similarly, we can transfer the output files from the worker machine to `login.osgconnect.net` by adding the following lines in the HTCondor job submission script file `namd_run.submit`:
 
 	transfer_output_files = file1.out, file2.out, file3.out ... # List of output files separated by commas.
 	should_transfer_files=Yes                                   # Key word to activate the file transfer
 	when_to_transfer_output = ON_EXIT                           # After the job execution is finished
+	
 However, in the vanilla universe `transfer_output_files` is not necessary as it transfers all the output files by default (the current example runs the job in the vanilla universe). The other script file `namd_run.sh` has the information about loading the `namd` module and the job execution commands:
 
 	#!/bin/bash                              
@@ -56,4 +60,4 @@ After the simulation is completed, you will see the output files (including rest
 
 
 ## Getting Help
-For assistance or questions, please email the OSG User Support team  at `user-support@opensciencegrid.org` or visit the [help desk and community forums](http://support.opensciencegrid.org).
+For assistance or questions, please email the OSG User Support team  at [user-support@opensciencegrid.org](user-support@opensciencegrid.org) or visit the [help desk and community forums](http://support.opensciencegrid.org).
