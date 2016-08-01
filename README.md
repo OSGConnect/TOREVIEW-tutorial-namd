@@ -3,7 +3,7 @@
  
 ## Overview
 
-[NAMD](http://www.ks.uiuc.edu/Research/namd/) is a widely used molecular dynamics simulation program. It lets users specify a molecule in some initial state and then observe its time evolution subject to forces. Essentially, it lets you go from a specifed molecular [structure](http://en.wikipedia.org/wiki/Superoxide_dismutase#mediaviewer/File:Superoxide_dismutase_2_PDB_1VAR.png) to a [simulation](https://www.youtube.com/watch?v=mk3cLd9PUPA&list=PL418E1C62DD9FC8BA&index=1) of its behavior in a particular environment.  It has been used to study polio eradication, similations of graphene, and studies of biofuels.
+[NAMD](http://www.ks.uiuc.edu/Research/namd/) is a widely used molecular dynamics simulation program. It lets users specify a molecule in some initial state and then observe its time evolution subject to forces. Essentially, it lets you go from a specific molecular [structure](http://en.wikipedia.org/wiki/Superoxide_dismutase#mediaviewer/File:Superoxide_dismutase_2_PDB_1VAR.png) to a [simulation](https://www.youtube.com/watch?v=mk3cLd9PUPA&list=PL418E1C62DD9FC8BA&index=1) of its behavior in a particular environment.  It has been used to study polio eradication, simulations of graphene, and studies of biofuels.
 
 In this tutorial, we will learn how to run NAMD simulations on the OSG. We will perform the molecular dynamics simulation of Ubiquitin (pdb ID: 1UBQ) in implicit water.  
 
@@ -27,7 +27,7 @@ Here, `namd_run.submit` and `namd_run.sh` are the script files related to job su
 
 ## Job execution and submission files
 
-The file `namd_run.submit` is the HTCondor job submission file.  Here, we focus on the HTCondor file transfer mechanism relevant for this NAMD simulation example. The key word `transfer_input_files`  specifies what input files  are transferred from the login machine to the remote worker machine (where the jobs are being executed).  In the `namd_run.submit` file, the option
+The file `namd_run.submit` is the HTCondor job submission file.  Here, we focus on the HTCondor file transfer mechanism relevant for this NAMD simulation example. The key word `transfer_input_files`  specifies which input files  are transferred from the login machine to the remote worker machine (where the jobs are being executed).  In the `namd_run.submit` file, the option
 
 	transfer_input_files = ubq_gbis_eq.conf, ubq.pdb, ubq.psf, par_all27_prot_lipid.inp # list of input files needs to be transferred to the worker machine before. 
 	
