@@ -1,4 +1,5 @@
-[title]: - "NAMD"
+[title]: - "A Simple NAMD Application"
+
 [TOC]
  
 ## Overview
